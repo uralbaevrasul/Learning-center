@@ -1,14 +1,14 @@
 import { useRef, useEffect, } from "react";
 
 const CERTIFICATES = [
-  { image:"./src/images/photo_2026-01-15_22-08-57.jpg" },
-  { image:"./src/images/photo_2026-02-09_00-31-22 (2).jpg" },
-  { image:"./src/images/photo_2026-02-09_00-31-22.jpg" },
-  { image:"./src/images/photo_2026-02-28_23-19-38.jpg" },
-  { image:"./src/images/photo_2026-02-28_23-00-53.jpg" },
-  { image:"./src/images/photo_2026-02-28_23-18-45.jpg"},
-  {image:"./src/images/photo_2026-02-28_23-01-08.jpg"},
-  {image:"./src/images/photo_2026-02-28_23-23-30.jpg"}
+  { image:"../src/images/photo_2026-01-15_22-08-57.jpg" },
+  { image:"../src/images/photo_2026-02-09_00-31-22 (2).jpg" },
+  { image:"../src/images/photo_2026-02-09_00-31-22.jpg" },
+  { image:"../src/images/photo_2026-02-28_23-19-38.jpg" },
+  { image:"../src/images/photo_2026-02-28_23-00-53.jpg" },
+  { image:"../src/images/photo_2026-02-28_23-18-45.jpg"},
+  {image:"../src/images/photo_2026-02-28_23-01-08.jpg"},
+  {image:"../src/images/photo_2026-02-28_23-23-30.jpg"}
 ];
 const ITEMS = [...CERTIFICATES, ...CERTIFICATES];
 

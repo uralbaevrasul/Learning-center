@@ -1,19 +1,19 @@
 function Courses() {
   const courses = [
     {
-      src: "./src/images/mathematics_4090351.png",
+      src: "../src/images/mathematics_4090351.png",
       alt: "",
       name: "Matematika",
       text: "Matematika kursida o‘quvchilar DTM imtihonlariga va oliy ta’lim muassasalariga kirish testlariga puxta tayyorlanadi. Darslar davomida mantiqiy fikrlash, masalalarni tez va to‘g‘ri yechish ko‘nikmalari shakllantiriladi hamda testlar asosida doimiy nazorat olib boriladi.",
     },
     {
-      src: "./src/images/eng_5486259.png",
+      src: "../src/images/eng_5486259.png",
       alt: "",
       name: "Ingliz tili",
       text: "Ingliz tili kursi o‘quvchilarni xalqaro sertifikatlarga, xususan IELTS imtihoniga tayyorlashga yo‘naltirilgan. Darslarda speaking, listening, reading va writing bo‘yicha alohida mashg‘ulotlar o‘tkazilib, real imtihon formatida sinovlar qilinadi.",
     },
     {
-      src: "./src/images/book_5635254.png",
+      src: "../src/images/book_5635254.png",
       alt: "",
       name: "Rus tili",
       text: "Rus tili kursida o‘quvchilar til bilimlarini mustahkamlash, erkin muloqot qilish va sertifikat imtihonlariga tayyorlanish imkoniyatiga ega bo‘ladilar. Shuningdek, grammatikani chuqur o‘rganish va amaliy mashqlar orqali tilni tez o‘zlashtirishga e’tibor qaratiladi.",
