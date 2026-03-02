@@ -1,14 +1,21 @@
 import { useRef, useEffect, } from "react";
-
+import img1 from "../src/images/photo_2026-01-15_22-08-57.jpg";
+import img2 from "../src/images/photo_2026-02-09_00-31-22 (2).jpg";
+import img3 from "../src/images/photo_2026-02-09_00-31-22.jpg";
+import img4 from "../src/images/photo_2026-02-28_23-19-38.jpg";
+import img5 from "../src/images/photo_2026-02-28_23-00-53.jpg";
+import img6 from "../src/images/photo_2026-02-28_23-18-45.jpg";
+import img7 from "../src/images/photo_2026-02-28_23-01-08.jpg";
+import img8 from "../src/images/photo_2026-02-28_23-23-30.jpg";
 const CERTIFICATES = [
-  { image:"../src/images/photo_2026-01-15_22-08-57.jpg" },
-  { image:"../src/images/photo_2026-02-09_00-31-22 (2).jpg" },
-  { image:"../src/images/photo_2026-02-09_00-31-22.jpg" },
-  { image:"../src/images/photo_2026-02-28_23-19-38.jpg" },
-  { image:"../src/images/photo_2026-02-28_23-00-53.jpg" },
-  { image:"../src/images/photo_2026-02-28_23-18-45.jpg"},
-  {image:"../src/images/photo_2026-02-28_23-01-08.jpg"},
-  {image:"../src/images/photo_2026-02-28_23-23-30.jpg"}
+  { image: img1 },
+  { image: img2 },
+  { image: img3 },
+  { image: img4 },
+  { image: img5 },
+  { image: img6 },
+  { image: img7 },
+  { image: img8 },
 ];
 const ITEMS = [...CERTIFICATES, ...CERTIFICATES];
 

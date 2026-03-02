@@ -1,3 +1,4 @@
+import img1 from "../src/images/photo_2025-06-16_02-31-05.jpg";
 function Navbar() {
     return <>
     <div className="navbar  text-black  sticky top-0 z-50 max-w-[1540px] w-full mx-auto  rounded-2xl bg-blue-200/20 backdrop-blur-md shadow-sm">
@@ -17,7 +18,7 @@ function Navbar() {
         <li><a>Narxlar</a></li>
       </ul>
     </div>
-    <img src="../src/images/photo_2025-06-16_02-31-05.jpg" className=" w-10" alt="logo" />
+    <img src={img1} className=" w-10" alt="logo" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
