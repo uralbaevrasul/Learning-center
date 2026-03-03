@@ -1,12 +1,12 @@
 import { useRef, useEffect, } from "react";
-import img1 from "../src/images/photo_2026-01-15_22-08-57.jpg";
-import img2 from "../src/images/photo_2026-02-09_00-31-22 (2).jpg";
-import img3 from "../src/images/photo_2026-02-09_00-31-22.jpg";
-import img4 from "../src/images/photo_2026-02-28_23-19-38.jpg";
-import img5 from "../src/images/photo_2026-02-28_23-00-53.jpg";
-import img6 from "../src/images/photo_2026-02-28_23-18-45.jpg";
-import img7 from "../src/images/photo_2026-02-28_23-01-08.jpg";
-import img8 from "../src/images/photo_2026-02-28_23-23-30.jpg";
+import img1 from "../images/photo_2026-01-15_22-08-57.jpg";
+import img2 from "../images/photo_2026-02-09_00-31-22 (2).jpg";
+import img3 from "../images/photo_2026-02-09_00-31-22.jpg";
+import img4 from "../images/photo_2026-02-28_23-19-38.jpg";
+import img5 from "../images/photo_2026-02-28_23-00-53.jpg";
+import img6 from "../images/photo_2026-02-28_23-18-45.jpg";
+import img7 from "../images/photo_2026-02-28_23-01-08.jpg";
+import img8 from "../images/photo_2026-02-28_23-23-30.jpg";
 const CERTIFICATES = [
   { image: img1 },
   { image: img2 },

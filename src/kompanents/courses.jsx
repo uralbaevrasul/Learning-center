@@ -1,6 +1,6 @@
-import img1 from  "../src/images/mathematics_4090351.png"
-import img2 from "../src/images/eng_5486259.png";
-import img3 from  "../src/images/book_5635254.png";
+import img1 from "../images/mathematics_4090351.png"
+import img2 from "../images/eng_5486259.png";
+import img3 from "../images/book_5635254.png";
 
 function Courses() {
   const courses = [
@@ -45,7 +45,7 @@ function Courses() {
 
             <figure className="relative z-10 mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50">
               <img
-                src={i.src}
+                src={i?.src}
                 alt={i.alt}
                 className="w-7 transition-transform duration-300 group-hover:scale-110"
               />
