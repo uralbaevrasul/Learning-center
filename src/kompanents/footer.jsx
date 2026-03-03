@@ -1,71 +1,82 @@
-export default function Footer() {
-    return (
-      <footer className="bg-blue-50 border-t border-blue-100">
-        <div className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10">
-  
-          {/* Chap qism – kontakt ma'lumot */}
-          <div>
-            <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-              Bog‘lanish
+function Footer() {
+  return (
+    <footer className="bg-blue-50 border-t border-blue-100">
+      <div className="max-w-7xl mx-auto px-6 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+          <div className="text-blue-600">
+            <h3 className="text-xl font-semibold text-blue-900 mb-6">
+              Biz bilan bog‘lanish
             </h3>
-  
-            <p className="text-blue-700 mb-2">
-              O‘quv markazimiz bilan bog‘lanish uchun:
-            </p>
-  
-            <div className="space-y-2 text-blue-800 font-medium">
-              <p>📞 +998 90 123 45 67</p>
-              <p>📞 +998 93 765 43 21</p>
-              <p>📍 Qo‘ng‘irot tumani</p>
-            </div>
-          </div>
-  
-          {/* O‘ng qism – xabar yuborish formasi */}
-          <div className="bg-white rounded-2xl shadow-sm p-6 border border-blue-100">
-            <h4 className="text-xl font-semibold text-blue-900 mb-4">
-              Bizga xabar yuboring
-            </h4>
-  
-            <form className="space-y-4 text-blue-700">
-  
+
+            <form className="space-y-4">
               <input
                 type="text"
                 placeholder="Ismingiz"
-                className="w-full rounded-lg border border-blue-500 px-4 py-2
-                           focus:outline-none focus:ring-2 focus:ring-blue-200"
+                className="w-full px-4 py-3 rounded-lg border border-blue-500 bg-white
+                           focus:outline-none focus:ring-2 focus:ring-blue-300"
               />
-  
+
               <input
-                type="tel"
-                placeholder="Telefon raqamingiz"
-                className="w-full rounded-lg border border-blue-500 px-4 py-2
-                           focus:outline-none focus:ring-2 focus:ring-blue-200"
+                type="email"
+                placeholder="Email manzilingiz"
+                className="w-full px-4 py-3 rounded-lg border border-blue-500 bg-white
+                           focus:outline-none focus:ring-2 focus:ring-blue-300"
               />
-  
+
               <textarea
-                rows={4}
-                placeholder="Qaysi kursga yozilmoqchisiz (Qaysi yo‘nalish bo‘yicha)?"
-                className="w-full rounded-lg border border-blue-500 px-4 py-2
-                           focus:outline-none focus:ring-2 focus:ring-blue-200 resize-none"
+                rows="4"
+                placeholder="O‘quv markazga yubormoqchi bo‘lgan savolingiz yoki xabaringiz"
+                className="w-full px-4 py-3 rounded-lg border border-blue-500 bg-white
+                           focus:outline-none focus:ring-2 focus:ring-blue-300"
               />
-  
+
               <button
                 type="submit"
-                className="w-full bg-blue-500 hover:bg-blue-300
-                           text-blue-50 font-semibold py-2.5 rounded-lg
-                           transition"
+                className="px-6 py-3 rounded-lg bg-blue-500 text-white font-medium
+                           hover:bg-blue-600 transition"
               >
                 Yuborish
               </button>
             </form>
           </div>
-  
+
+          <div className="flex flex-col justify-start">
+            <h3 className="text-xl font-semibold text-blue-900 mb-6">
+              O‘quv markaz bilan aloqa
+            </h3>
+
+            <p className="text-blue-800 mb-3">
+              Telefon:
+              <span className="ml-2 font-medium">+998 90 123 45 67</span>
+            </p>
+
+            <p className="text-blue-800 mb-6">
+              Email:
+              <span className="ml-2 font-medium">info@oqiwmarkaz.uz</span>
+            </p>
+
+            <p className="text-blue-700 leading-relaxed max-w-md">
+              Siz ushbu forma orqali o‘quv markazimizga kurslar
+              (matematika, ingliz tili, rus tili) bo‘yicha savollar,
+              ro‘yxatdan o‘tish va maslahat olish uchun murojaat yuborishingiz mumkin.
+            </p>
+          </div>
         </div>
-  
-        {/* pastki chiziq */}
-        <div className="border-t border-blue-100 text-center py-4 text-blue-700 text-sm">
-          © 2026 O‘quv markazi. Barcha huquqlar himoyalangan.
+
+        <div className="mt-12 pt-6 border-t border-blue-100 flex flex-col md:flex-row
+                        items-center justify-between gap-3">
+          <p className="text-sm text-blue-700">
+            © 2026 O‘quv markazi. Barcha huquqlar himoyalangan.
+          </p>
+
+          <p className="text-sm text-blue-600">
+            Matematika • Ingliz tili • Rus tili
+          </p>
         </div>
-      </footer>
-    );
-  }
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
