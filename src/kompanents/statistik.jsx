@@ -64,19 +64,19 @@ function StatCard({ stat, active, index }) {
       }}
     >
       {/* top accent line */}
-      <div className="absolute top-0 left-6 right-6 h-0.5 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 rounded-full" />
+      <div className="absolute top-0 left-6 right-6 h-0.5 bg-gradient-to-r from-orange-200 via-orange-400 to-orange-200 rounded-full" />
 
       {/* hover glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl" />
 
       {/* icon */}
-      <div className="relative w-12 h-12 rounded-2xl text-blue-500 font-bold bg-blue-50 border border-blue-100 flex items-center justify-center text-2xl">
+      <div className="relative w-12 h-12 rounded-2xl text-orange-500 font-bold bg-orange-50 border border-orange-100 flex items-center justify-center text-2xl">
         {stat.icon}
       </div>
 
       {/* number */}
       <div className="relative">
-        <div className="text-4xl font-black text-blue-600 tracking-tight leading-none">
+        <div className="text-4xl font-black text-orange-600 tracking-tight leading-none">
           {count.toLocaleString()}{stat.suffix}
         </div>
         <div className="mt-1.5 text-sm font-bold text-slate-700">{stat.label}</div>
@@ -84,9 +84,9 @@ function StatCard({ stat, active, index }) {
       </div>
 
       {/* bottom progress bar */}
-      <div className="relative h-1.5 bg-blue-50 rounded-full overflow-hidden">
+      <div className="relative h-1.5 bg-orange-50 rounded-full overflow-hidden">
         <div
-          className="h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full"
+          className="h-full bg-gradient-to-r from-orange-400 to-orange-600 rounded-full"
           style={{
             width: active ? `${Math.min((stat.value / 1248) * 100, 100)}%` : "0%",
             transition: `width 1.6s ${index * 0.12 + 0.3}s ease`,
@@ -111,7 +111,7 @@ export default function Statistics() {
   }, []);
 
   return (
-    <section ref={ref} className="bg-blue-50 py-24 px-6">
+    <section ref={ref} className="bg-orange-50 py-24 px-6">
 
       {/* Header */}
       <div
@@ -122,7 +122,7 @@ export default function Statistics() {
           transition: "all 0.6s ease",
         }}
       >
-        <span className="inline-block bg-blue-100 text-blue-600 text-xs font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
+        <span className="inline-block bg-orange-100 text-orange-600 text-xs font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
           📊 Statistika
         </span>
         <h2 className="text-4xl font-black text-slate-800 leading-tight">
@@ -142,7 +142,7 @@ export default function Statistics() {
 
       {/* Bottom banner */}
       <div
-        className="max-w-5xl mx-auto mt-8 bg-blue-600 rounded-3xl px-8 py-6 flex flex-wrap justify-around items-center gap-6"
+        className="max-w-5xl mx-auto mt-8 bg-orange-600 rounded-3xl px-8 py-6 flex flex-wrap justify-around items-center gap-6"
         style={{
           opacity: active ? 1 : 0,
           transition: "opacity 0.7s 0.6s ease",
@@ -157,7 +157,7 @@ export default function Statistics() {
         ].map((item, i) => (
           <div key={i} className="text-center">
             <div className="text-3xl font-black text-white">{item.value}</div>
-            <div className="text-blue-200 text-xs font-semibold mt-1">{item.label}</div>
+            <div className="text-orange-200 text-xs font-semibold mt-1">{item.label}</div>
           </div>
         ))}
       </div>

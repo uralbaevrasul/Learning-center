@@ -29,21 +29,20 @@ function Courses() {
         {courses.map((i) => (
           <div
             className="group relative overflow-hidden rounded-2xl 
-        border border-blue-500 bg-white p-5
+        border border-orange-500 bg-white p-5
         shadow-sm transition-all duration-300
         hover:-translate-y-1 hover:shadow-2xl
-        hover:border-blue-500/40
-        /* Kengliklar: Mobil uchun to'liq, planshet uchun 2ta, kompyuter uchun 3-4ta */
+        hover:border-orange-500/40
         w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-2rem)] xl:w-80"
           >
             {/* fon effekt */}
             <span
               className="pointer-events-none absolute inset-0 
-          bg-gradient-to-br from-blue-500/5 via-indigo-500/5 to-purple-500/5 
+          bg-gradient-to-br from-orange-500/5 via-indigo-500/5 to-purple-500/5 
           opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             />
 
-            <figure className="relative z-10 mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50">
+            <figure className="relative z-10 mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50">
               <img
                 src={i?.src}
                 alt={i.alt}
@@ -54,7 +53,7 @@ function Courses() {
             <div className="relative z-10">
               <h2
                 className="mb-2 text-lg font-semibold text-slate-800 
-            group-hover:text-blue-600 transition-colors"
+            group-hover:text-orange-600 transition-colors"
               >
                 {i.name}
               </h2>

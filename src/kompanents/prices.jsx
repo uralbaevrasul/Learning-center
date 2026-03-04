@@ -31,7 +31,7 @@ function Prices() {
           group 
           w-full sm:w-[270px] 
           rounded-3xl
-          border border-blue-400/60
+          border border-orange-400/60
           bg-gradient-to-b from-white to-orange-50/40
           p-6 text-center
           shadow-md
@@ -44,19 +44,19 @@ function Prices() {
             {i.nomi}
           </h2>
 
-          <div className="mx-auto my-4 h-[2px] w-16 rounded-full bg-blue-400" />
+          <div className="mx-auto my-4 h-[2px] w-16 rounded-full bg-orange-400" />
 
           <ul className="mb-6 space-y-2 text-sm text-slate-600">
             <li className="flex items-center justify-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-blue-400"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-orange-400"></span>
               {i.turi1}
             </li>
             <li className="flex items-center justify-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-blue-400"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-orange-400"></span>
               {i.turi2}
             </li>
             <li className="flex items-center justify-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-blue-400"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-orange-400"></span>
               {i.turi3}
             </li>
           </ul>
@@ -64,11 +64,11 @@ function Prices() {
           <button
             className="
             relative w-full overflow-hidden rounded-xl
-            bg-gradient-to-r from-blue-500 to-blue-600
+            bg-gradient-to-r from-orange-500 to-orange-600
             py-3 text-sm font-semibold text-white
-            shadow-lg shadow-blue-500/30
+            shadow-lg shadow-orange-500/30
             transition-all duration-300
-            hover:from-blue-600 hover:to-blue-700
+            hover:from-orange-600 hover:to-orange-700
             active:scale-95
           "
           >

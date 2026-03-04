@@ -51,9 +51,9 @@ export default function InfiniteCarousel() {
   const resume = () => (pausedRef.current = false);
 
   return (
-    <div className="bg-blue-50 py-20 px-0  overflow-hidden">
+    <div className="bg-orange-50 py-20 px-0  overflow-hidden">
       <div className="text-center mb-12 px-6">
-        <span className="text-xs font-extrabold tracking-widest uppercase text-blue-600">
+        <span className="text-xs font-extrabold tracking-widest uppercase text-orange-600">
           Sertifikatlar
         </span>
         <h2
