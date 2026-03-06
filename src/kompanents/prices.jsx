@@ -23,7 +23,7 @@ function Prices() {
     },
   ];
   return (
-    <div className="px-5 py-10 flex flex-wrap justify-around items-center gap-6">
+    <div id="prices" className="px-5 py-10 flex flex-wrap justify-around items-center bg-orange-200 gap-6">
       {price.map((i, index) => (
         <div
           key={index}
@@ -32,7 +32,7 @@ function Prices() {
           w-full sm:w-[270px] 
           rounded-3xl
           border border-orange-400/60
-          bg-gradient-to-b from-white to-orange-50/40
+          bg-gradient-to-b from-white to-orange-100/60
           p-6 text-center
           shadow-md
           transition-all duration-300

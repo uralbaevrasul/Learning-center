@@ -53,7 +53,8 @@ function StatCard({ stat, active, index }) {
   const count = useCounter(stat.value, active);
 
   return (
-    <div
+    <div id="statistik">
+      <div 
       className="relative bg-white rounded-3xl p-7 flex flex-col gap-4 overflow-hidden group"
       style={{
         boxShadow: "0 2px 20px rgba(59,130,246,0.08)",
@@ -94,6 +95,8 @@ function StatCard({ stat, active, index }) {
         />
       </div>
     </div>
+    </div>
+  
   );
 }
 

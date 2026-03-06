@@ -10,28 +10,28 @@ function Navbar() {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-orange-50 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Kurs haqida</a></li>
+        <li><a href="./courses.jsx">Kurs haqida</a></li>
         <li>
-        <a href="">Natijalar</a>
+        <a href="#results">Natijalar</a>
         </li>
-        <li><a>Kurslar</a></li>
-        <li><a>Narxlar</a></li>
+        <li><a href="#statistik">Statistika</a></li>
+        <li><a href="#prices">Narxlar</a></li>
       </ul>
     </div>
     <img src={img1} className=" w-10" alt="logo" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Kurs haqqida</a></li>
+      <li><a href="#courses">Kurs haqqida</a></li>
       <li>
- <a href="">Natijalar</a>
+ <a href="#results">Natijalar</a>
       </li>
-      <li><a>Kurslar</a></li>
-      <li><a>Narxlar</a></li>
+      <li><a href="#statistik">Statistika</a></li>
+      <li><a href="#prices">Narxlar</a></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg-orange-500 border-0">Ulanish</a>
+    <a href="#footer" className="btn bg-orange-500 border-0">Ulanish</a>
   </div>
 </div>
     </>

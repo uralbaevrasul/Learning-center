@@ -24,7 +24,7 @@ function Courses() {
     },
   ];
   return (
-    <div className="bg-blue-50">
+    <div id="courses" className="bg-blue-50">
       <div className="flex flex-wrap justify-around items-center gap-6 md:gap-10 px-5 py-10">
         {courses.map((i) => (
           <div
