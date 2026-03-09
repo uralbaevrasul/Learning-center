@@ -1,4 +1,7 @@
-import { useRef, useEffect, } from "react";
+import { useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import carouselText from "../translations/carouselText";
+
 import img1 from "../images/photo_2026-01-15_22-08-57.jpg";
 import img2 from "../images/photo_2026-02-09_00-31-22 (2).jpg";
 import img3 from "../images/photo_2026-02-09_00-31-22.jpg";
@@ -7,6 +10,7 @@ import img5 from "../images/photo_2026-02-28_23-00-53.jpg";
 import img6 from "../images/photo_2026-02-28_23-18-45.jpg";
 import img7 from "../images/photo_2026-02-28_23-01-08.jpg";
 import img8 from "../images/photo_2026-02-28_23-23-30.jpg";
+
 const CERTIFICATES = [
   { image: img1 },
   { image: img2 },
@@ -17,6 +21,7 @@ const CERTIFICATES = [
   { image: img7 },
   { image: img8 },
 ];
+
 const ITEMS = [...CERTIFICATES, ...CERTIFICATES];
 
 export default function InfiniteCarousel() {
@@ -25,6 +30,9 @@ export default function InfiniteCarousel() {
   const posRef = useRef(0);
   const pausedRef = useRef(false);
   const SPEED = 0.6; 
+  const { i18n } = useTranslation();
+
+  const text = carouselText[i18n.language];
 
   useEffect(() => {
     const track = trackRef.current;
@@ -51,16 +59,16 @@ export default function InfiniteCarousel() {
   const resume = () => (pausedRef.current = false);
 
   return (
-    <div id="results" className="bg-orange-50 py-20 px-0   overflow-hidden">
+    <div id="results" className="bg-orange-50 py-20 px-0 overflow-hidden">
       <div className="text-center mb-12 px-6">
         <span className="text-xs font-extrabold tracking-widest uppercase text-orange-600">
-          Sertifikatlar
+          {text.subtitle}
         </span>
         <h2
           className="mt-2 font-black text-4xl text-slate-900"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
-          O'quvchilar muvaffaqiyatlari
+          {text.title}
         </h2>
       </div>
 
@@ -94,8 +102,9 @@ export default function InfiniteCarousel() {
 }
 
 function CertCard({ cert }) {
-  return (<div className="w-70 flex justify-center items-center">
-    <img src={cert.image}  alt="" className="w-9/10" />
-  </div>
+  return (
+    <div className="w-70 flex justify-center items-center">
+      <img src={cert.image} alt="" className="w-9/10" />
+    </div>
   );
 }

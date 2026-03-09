@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import "./i18n"
 import Navbar from './kompanents/navbar.jsx'
 import Hero from './kompanents/hero.jsx'
 import Result from './kompanents/results.jsx'
