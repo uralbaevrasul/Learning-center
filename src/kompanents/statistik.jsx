@@ -23,13 +23,14 @@ function useCounter(target, active) {
 function StatCard({ stat, active, index }) {
   const count = useCounter(stat.value, active);
   return (
-    <div className="relative bg-white rounded-3xl p-7 flex flex-col gap-4 overflow-hidden group"
+    <div id="statistik" className="relative bg-white rounded-3xl p-7 flex flex-col gap-4 overflow-hidden group"
          style={{
            boxShadow: "0 2px 20px rgba(59,130,246,0.08)",
            border: "1.5px solid #dbeafe",
            opacity: active ? 1 : 0,
            transform: active ? "translateY(0px)" : "translateY(28px)",
            transition: `opacity 0.6s ${index*0.12}s ease, transform 0.6s ${index*0.12}s ease`
+          
          }}>
       <div className="absolute top-0 left-6 right-6 h-0.5 bg-gradient-to-r from-orange-200 via-orange-400 to-orange-200 rounded-full"/>
       <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl"/>
